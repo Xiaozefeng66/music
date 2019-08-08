@@ -1,12 +1,12 @@
 <template>
    <div class="tabbaritem">
-       <span v-for="(item,index) in list"
+       <div v-for="(item,index) in list"
        :key="index" class="item"
        @click="itemclick(index)"
        :class="{'isactive':
            currenindex===index}">
        {{item}}
-       </span>
+       </div>
    </div>
 </template>
 
@@ -48,7 +48,8 @@ export default {
       background: #fff;
 }
 .item{
-   margin-left: 40px;
+    float: left;
+    width: 33%;
   height: 44px;
   line-height: 44px;
   text-align: center

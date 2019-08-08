@@ -83,6 +83,7 @@ color: #888888;
    color: #999
 }
 .detaillist .songinfo{
+    line-height: 25px;
      height: 55px;
     display: inline-block;
 }
