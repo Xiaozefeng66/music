@@ -1,9 +1,10 @@
-# music
+## 项目说明
 
 这是一个根据网易云音乐api 实现的一个音乐播放器
 网易云api 地址：https://github.com/Binaryify/NeteaseCloudMusicApi.git
- 
- ## 项目运行
+
+主要以 vue、vue-router axios vue-aplayer 技术实现的小项目
+ ## 项目运行 
 ``` bash
 # 克隆到本地
 git clone https://github.com/Xiaozefeng66/music.git
