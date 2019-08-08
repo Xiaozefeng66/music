@@ -1,12 +1,12 @@
 # music
 
 这是一个根据网易云音乐api 实现的一个音乐播放器
- 网易云api 地址：https://github.com/Binaryify/NeteaseCloudMusicApi.git
+网易云api 地址：https://github.com/Binaryify/NeteaseCloudMusicApi.git
  
  ## 项目运行
 ``` bash
 # 克隆到本地
-git clone 
+git clone https://github.com/Xiaozefeng66/music.git
 
 # 进入文件夹
 cd vuemusic
