@@ -20,9 +20,9 @@ npm run serve
 # 发布环境
 npm run build
 ```
+ ## 效果截图
+![image](https://github.com/Xiaozefeng66/music/blob/master/src/assets/img/Recommend.PNG)
 
 
 
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
