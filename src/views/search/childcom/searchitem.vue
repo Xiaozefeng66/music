@@ -5,7 +5,7 @@
      </div>
       <div class="info">
       <span>{{searchitem.artists[0].name}}</span>   
-      <span>-{{searchitem.album.name}}</span></div>
+      <span class="Album">-{{searchitem.album.name}}</span></div>
    </div>
 </template>
 
@@ -44,7 +44,7 @@ geturl(){
                  this.$router.push({
              path:'/playmusic',
              query:{
-                  id:this.songitem.id
+                  id:this.searchitem.id
              }
           })
   })
@@ -57,8 +57,14 @@ geturl(){
 .info{
   font-size: 12px;
   color: #888;
+   height: 30px;
+    overflow: hidden;
+
 }
+
 .songname{
+  height: 25px;
   margin-top: 8px;
+  overflow: hidden;
 }
 </style>

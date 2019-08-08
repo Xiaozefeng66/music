@@ -1,6 +1,6 @@
 <template>
    <div class="recom">
-    <p>推荐歌单</p>
+    <p class="songsheet">推荐歌单</p>
     <div class="songlist">
     <listitem  v-for="(item,index) in listitem"
        :key="index" :listitem="item"></listitem>
@@ -28,8 +28,12 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.songsheet::before{
+ content: '';
+    border-left: 3px solid red;
+    margin-right: 10px;  
+}
 .songlist{
    display: flex;
     flex-wrap: wrap;
@@ -37,9 +41,5 @@ export default {
     padding: 0 2px;
 }
 
-.title::before{
-    content: '';
-    border-left: 3px solid red;
-    margin-right: 10px;  
-}
+
 </style>

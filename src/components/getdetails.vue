@@ -1,5 +1,10 @@
 <template>
    <div>
+       <div class="sheet">
+           <div class="sheetimg"><img :src="img" alt=""></div>
+           <div class="sheetname"><p>{{name}}</p></div>
+       </div>
+       <div class="songlist">歌曲列表</div>
     <getdetaillist v-for="(item,index) of songlist"
     :key="index" :getdetaillist="item" :rank='index' class="list"
     ></getdetaillist>
@@ -13,7 +18,9 @@ export default {
     data(){
         return{
             id:this.$route.query.id,
-            songlist:null
+            songlist:null,
+            img:this.$route.query.img,
+            name:this.$route.query.name
         }
     },
     components:{
@@ -28,11 +35,29 @@ export default {
 }
 </script>
 
-<style>
-.list{
+<style scoped>
+.sheet{
     display: flex;
-    height: 40px;
-    line-height: 40px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+}
+.sheetname{
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 16px;
+}
+.sheetimg{
+   margin-left: 12px;
+}
+.sheetimg img{
+width: 126px;
+height: 126px;
+}
+.songlist{
+    height: 23px;
+    line-height: 23px;
+    padding: 0 10px;
+    font-size: 12px;
+    color: #666;
+    background-color: #eeeff0;
+    margin-bottom: 10px;
 }
 </style>

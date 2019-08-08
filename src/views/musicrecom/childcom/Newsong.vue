@@ -31,9 +31,14 @@ this.newsongitem=res.data.result
 }
 </script>
 
-<style>
+<style scoped>
 .title{
     margin-bottom: 20px;
+}
+.title::before{
+    content: '';
+    border-left: 3px solid red;
+    margin-right: 10px;  
 }
 .songline{
   padding: 4px 0;

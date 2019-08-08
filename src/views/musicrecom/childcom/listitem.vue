@@ -2,8 +2,7 @@
    <div class="listitem" @click="getid">
        <img :src="listitem.picUrl" alt="">
        <p>{{listitem.name}}</p>
-       <!-- <img src="" alt="">
-       <span></span> -->
+      
    </div>
 </template>
 
@@ -23,7 +22,9 @@ export default {
               this.$router.push({
                   path:'/playlist',
                   query:{
-                      id:this.listitem.id
+                      id:this.listitem.id,
+                      img:this.listitem.picUrl,
+                      name:this.listitem.name
                   }
               })
         
@@ -33,7 +34,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .listitem{
     margin: 20px 0;
     width: 33%;

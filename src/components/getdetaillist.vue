@@ -1,9 +1,13 @@
 <template>
-   <div @click="geturl">
-       <div class="rankindex">{{rank+1}}</div>
-       <div class="playimg"><img src="../assets/logo.jpg" alt=""></div>
-      <div class="listname"><p>{{getdetaillist.name}}</p></div>
-       <div class="arname"><p>{{getdetaillist.ar[0].name}}</p></div>
+   <div @click="geturl" class="detaillist">
+        <span class="rank">{{rank+1}}</span>
+      <div class="songinfo"> 
+          <span class="songname">{{getdetaillist.name}}</span>
+          <div class="name">
+           <span>{{getdetaillist.ar[0].name}}</span>
+       </div>
+      </div>
+          <div class="playimg"><img src="../assets/logo.jpg" alt=""></div>
    </div>
 </template>
 
@@ -60,22 +64,37 @@ export default {
 }
 </script>
 
-<style>
-.rankindex{
-    margin-left: 10px;
-}
-.listname{
-    margin-left: 20px;
-    overflow: hidden;
-}
+<style scoped>
 
+.detaillist{
+    position: relative;
+    height: 55px;
+}
+.detaillist .name{
+    font-size: 12px;
+color: #888888;
+}
+.detaillist .rank{
+    width: 44px;
+    height: 55px;
+    display: inline-block;
+    line-height: 55px;
+    text-align: center;
+   color: #999
+}
+.detaillist .songinfo{
+     height: 55px;
+    display: inline-block;
+}
+.playimg{
+   position: absolute;
+   right: 15px;
+   top: 0;
+}
 .playimg img{
     height: 25px;
     width: 25px;
     margin-top: 8px;
     margin-left: 16px;
-}
-.arname{
-  margin-left: 16px; 
 }
 </style>

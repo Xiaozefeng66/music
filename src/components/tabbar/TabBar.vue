@@ -1,7 +1,7 @@
 <template>
-   <div >
+  
        <tab-baritem ></tab-baritem>
-   </div>
+
 </template>
 
 <script>
@@ -15,6 +15,6 @@ export default {
 }
 </script>
 
-<style>
+<style scope>
 
 </style>

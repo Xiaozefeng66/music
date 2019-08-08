@@ -1,5 +1,6 @@
-# music3
+# music
 
+这是一个根据网易云音乐api 实现的一个音乐播放器
 ## Project setup
 ```
 npm install
