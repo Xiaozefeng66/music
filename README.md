@@ -9,7 +9,7 @@
 git clone https://github.com/Xiaozefeng66/music.git
 
 # 进入文件夹
-cd vuemusic
+cd music
 
 # 安装依赖
 npm install(推荐)
