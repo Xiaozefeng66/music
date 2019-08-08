@@ -21,8 +21,19 @@ npm run serve
 npm run build
 ```
  ## 效果截图
+ # 推荐页面
 ![image](https://github.com/Xiaozefeng66/music/blob/master/src/assets/img/Recommend.PNG)
 
+# 热歌榜页面
+![image](https://github.com/Xiaozefeng66/music/blob/master/src/assets/img/hotsong.PNG)
 
+# 搜索页面
+![image](https://github.com/Xiaozefeng66/music/blob/master/src/assets/img/search.PNG)
+
+# 搜索结果页面
+![image](https://github.com/Xiaozefeng66/music/blob/master/src/assets/img/searchres.PNG)
+
+# 播放页面
+![image](https://github.com/Xiaozefeng66/music/blob/master/src/assets/img/play.PNG)
 
 
